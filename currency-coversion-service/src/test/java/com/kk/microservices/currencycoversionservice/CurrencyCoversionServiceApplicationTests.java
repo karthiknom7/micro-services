@@ -1,10 +1,10 @@
-package com.kk.microservices.currencyexchangeservice;
+package com.kk.microservices.currencycoversionservice;
 
 import org.junit.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class CurrencyExchangeServiceApplicationTests {
+class CurrencyCoversionServiceApplicationTests {
 
 	@Test
 	void contextLoads() {

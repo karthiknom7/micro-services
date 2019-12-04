@@ -1,17 +1,24 @@
 package com.kk.microservices.currencyexchangeservice.model;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
 import java.math.BigDecimal;
 
-public class CurrencyExchangeValue {
+@Entity
+public class ExchangeValue {
+    @Id
     private Long id;
+    @Column(name = "currency_from")
     private String from;
+    @Column(name = "currency_to")
     private String to;
     private BigDecimal conversionMultiple;
 
-    public CurrencyExchangeValue() {
+    public ExchangeValue() {
     }
 
-    public CurrencyExchangeValue(Long id, String from, String to, BigDecimal conversionMultiple) {
+    public ExchangeValue(Long id, String from, String to, BigDecimal conversionMultiple) {
         this.id = id;
         this.from = from;
         this.to = to;
