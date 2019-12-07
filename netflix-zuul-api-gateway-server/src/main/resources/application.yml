@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: netflix-zuul-api-gateway-server
+  rabbitmq:
+    username: rabbitmq
+    password: rabbitmq
+server:
+  port: 8765
+eureka:
+  client:
+    service-url:
+      default-zone: http://localhost:8761/eureka

@@ -6,5 +6,8 @@ spring:
   h2:
     console:
       enabled: true
+  rabbitmq:
+    username: rabbitmq
+    password: rabbitmq
 server:
   port: 8000

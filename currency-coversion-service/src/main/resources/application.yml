@@ -1,8 +1,20 @@
 spring:
   application:
     name: currency-conversion-service
+  cloud:
+    config:
+      uri:
+        - http://localhost:8888
+  rabbitmq:
+    username: rabbitmq
+    password: rabbitmq
 server:
   port: 8100
-currency-exchange-service:
-  ribbon:
-    listOfServers: http://localhost:8000,http://localhost:8001
+#currency-exchange-service:
+#  ribbon:
+#    listOfServers: http://localhost:8000,http://localhost:8001
+#No need to configure URL for Ribbon because we have eureka configured
+eureka:
+  client:
+    service-url:
+      default-zone: http://localhost:8761/eureka
