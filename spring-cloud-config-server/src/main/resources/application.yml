@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: spring-cloud-config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/karthiknom7/cloud-config.git
+  rabbitmq:
+    username: rabbitmq
+    password: rabbitmq
+server:
+  port: 8888

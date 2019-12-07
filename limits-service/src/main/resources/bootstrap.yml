@@ -5,6 +5,9 @@ spring:
     config:
       uri:
         - http://localhost:8888
+  rabbitmq:
+    username: rabbitmq
+    password: rabbitmq
   profiles:
     active: dev
   jpa:
@@ -16,3 +19,8 @@ eureka:
   client:
     service-url:
       default-zone: http://localhost:8761/eureka
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
