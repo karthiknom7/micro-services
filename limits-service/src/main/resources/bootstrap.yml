@@ -5,9 +5,17 @@ spring:
     config:
       uri:
         - http://localhost:8888
+#    bus:
+#      enabled: true
+#    stream:
+#      kafka:
+#        binder:
+#          brokers: localhost:9092
   rabbitmq:
     username: rabbitmq
     password: rabbitmq
+#  kafka:
+#    bootstrap-servers: localhost:9092
   profiles:
     active: dev
   jpa:
